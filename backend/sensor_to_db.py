@@ -3,16 +3,20 @@ from sense_hat import SenseHat
 import psycopg2
 import time
 from datetime import datetime 
+import os
+from dotenv import load_dotenv
 
 sense = SenseHat()
 
 # Verbindung zur Datenbank
 try:
+    load_dotenv()
+
     conn = psycopg2.connect(
-        dbname="rp_02_website",
-        user="rp_02",
-        password="sI+01",
-        host="localhost"
+        dbname = os.getenv("DB_NAME"),
+        user = os.getenv("DB_USER"),
+        password = os.getenv("DB_PASS"),
+        host = os.getenv("DB_HOST")
     )
     cur = conn.cursor()
 

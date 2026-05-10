@@ -1,0 +1,16 @@
+# Secrets (Ganz wichtig!)
+web/db_config.php
+backend/.env
+
+# Python Kram
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.env/
+
+# Mac Systemdateien
+.DS_Store
+
+# VS Code Einstellungen (optional, falls du sie nicht teilen willst)
+.vscode/

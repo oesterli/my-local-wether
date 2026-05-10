@@ -1,0 +1,9 @@
+<?php
+    // Benenne diese Datei in db_config.php um und trage deine Daten ein
+    return [
+        'host' => 'localhost',
+        'dbname' => 'db_name',
+        'user' => 'user',
+        'pass' => 'pass'
+    ];
+?>
